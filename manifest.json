@@ -7,17 +7,23 @@
 
   "browser_action": {
     "default_icon": "bin/img/icon.png",
-    "default_popup": "bin/menu.html"
+    "default_popup": "hello.html"
   },
+
+  "background": {
+  "scripts": [
+    "bin/js/background.js"
+    ]
+  },
+
   "permissions": [
     "activeTab",
     "https://ajax.googleapis.com/"
-  ],
+ ],
   "content_scripts": [
     {
-      "run_at": ["document_end"],
       "matches": ["*://*/*"],
-      "js": ["bin/js/js.js", "bin/js/jquery.min.js"]
+      "js": ["bin/js/js.js"]
     }
   ]
 }

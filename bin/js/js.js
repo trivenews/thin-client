@@ -1,5 +1,14 @@
-/* Am I working? Test javascript injection, replace all images with an image location.*/
+/* Am I working? Test javascript injection, replace all images with an image location.
 Array.prototype.forEach.call(document.querySelectorAll('img'), function (img) {
-  img.src = 'REPLACEME_REPLACEME!';
+  img.src = 'https://media0.giphy.com/media/6L015gMEW3pFC/giphy.gif';
 });
-/* END TEST */
+*/
+
+/*include H*/
+
+init H
+window.hypothesisConfig = function () {
+  return {
+    "showHighlights": true
+  };
+};
